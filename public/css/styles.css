@@ -1,0 +1,102 @@
+body {
+    background-color:gray;
+    color:white;
+    margin: 0;
+}
+
+#imgheader{
+	width: 100%;
+	height: 10%;
+}
+
+  main, nav, footer {
+        text-align: center;
+    }
+    
+    nav a {    
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 1.8em;
+    text-decoration: none; 
+    color:black; 
+}
+
+nav a:hover {    
+    border-bottom:2px red solid;
+    font-size: 2em;
+    transition: .9s;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+ img.war-image {
+  vertical-align: middle;
+    }
+
+.war-item {
+  clear: both;
+  border-top: 1px solid #dadada;
+}
+.war-item:nth-child(odd) div.war-info {
+  float: right;
+}
+.war-item:nth-child(odd) div.war-image {
+  float: left;
+}
+.war-item:nth-child(even) div.war-info {
+  float: left;
+}
+.war-item:nth-child(even) div.war-image {
+  float: right;
+}
+
+footer {
+    
+    
+    font-size:0.725em;
+    color:black;
+    text-align: center;
+    margin-left: 500px;
+}
+
+#imgfooter{
+	vertical-align: middle;
+	align-items: center;
+}
+
+.aligned { 
+            display: flex; 
+            align-items: center;
+            text-align: center;
+
+        }
+ span { 
+ 	padding: 10px; 
+        } 
+        
+ul {
+    text-align: left;
+    list-style-position: inside;
+}
+
+.scc a {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    padding-left:0; 
+}
+
+.margin {
+    margin-left:100px;
+    margin-right:100px;
+}
+
+.margin2 {
+    margin-left:200px;
+    margin-right:200px;
+}
+
+h2 {
+    text-decoration: underline;
+}
