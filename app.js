@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 app.engine('html', require('ejs').renderFile);
 app.use(express.static("public"));
+var faker = require('faker');
 
 //routes
 app.get("/", function(req, res){
@@ -21,7 +22,9 @@ app.get("/intel", function(req, res){
 });
 
 app.get("/sources", function(req, res){
-    res.render("sources.html");
+    res.render("sources.html", {
+        contactCard: faker.helpers.createCard()
+    });
 });
 
 //starting server
