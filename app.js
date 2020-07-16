@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
+var faker = require('faker');
 app.engine('html', require('ejs').renderFile);
 app.use(express.static("public"));
-var faker = require('faker');
 
 //routes
 app.get("/", function(req, res){
