@@ -27,10 +27,6 @@ nav a:hover {
     transition: .9s;
 }
 
-nav a:visited {
-    color:white;
-}
-
 main {
     display: flex;
     justify-content: center;
