@@ -4,7 +4,7 @@ app.engine('html', require('ejs').renderFile);
 app.use(express.static("public"));
 
 //routes
-app.get("/overview", function(req, res){
+app.get("/", function(req, res){
     res.render("index.html");
 });
 
@@ -16,7 +16,7 @@ app.get("/logistics", function(req, res){
     res.render("logistics.html");
 });
 
-app.get("/intelligence", function(req, res){
+app.get("/intel", function(req, res){
     res.render("intel.html");
 });
 
