@@ -3,7 +3,6 @@ const app = express();
 var faker = require('faker');
 app.engine('html', require('ejs').renderFile);
 app.use(express.static("public"));
-console.log(randomCard);
 
 //routes
 app.get("/", function(req, res){
