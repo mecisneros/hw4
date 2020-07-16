@@ -100,3 +100,7 @@ ul {
 h2 {
     text-decoration: underline;
 }
+
+.someClass {
+    color: black;
+}
