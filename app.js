@@ -6,23 +6,23 @@ var faker = require('faker');
 
 //routes
 app.get("/", function(req, res){
-    res.render("index.html");
+    res.render("index.ejs");
 });
 
 app.get("/warfare", function(req, res){
-    res.render("warfare.html");
+    res.render("warfare.ejs");
 });
 
 app.get("/logistics", function(req, res){
-    res.render("logistics.html");
+    res.render("logistics.ejs");
 });
 
 app.get("/intel", function(req, res){
-    res.render("intel.html");
+    res.render("intel.ejs");
 });
 
 app.get("/sources", function(req, res){
-    res.render("sources.html", {
+    res.render("sources.ejs", {
         "contactCard": faker.helpers.createCard()
     });
 });
