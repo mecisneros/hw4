@@ -23,7 +23,8 @@ app.get("/intel", function(req, res){
 
 app.get("/sources", function(req, res){
     res.render("sources.ejs", {
-        "randomCard": faker.helpers.createCard()
+        companyName: faker.company.companyName(),
+        email: faker.internet.email()
     });
 });
 
